@@ -1,66 +1,122 @@
-<!doctype html>  
-<html><head><title>丘龙杰</title>  
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
-</head><body>  
-<div id="box" style="margin: 20px auto; text-align:center; width:252px;font:25px/25px 宋体;background:#000;color:#9f9;border:#999 20px ridge;text-shadow:2px 3px 1px #0f0;"></div>  
-<div id="footer" style="margin-top: 200px auto; text-align:center; font-size: 16px;">龍<a href="www.qiulongjie.com">www.qiulongjie.com</a>龍</div>  
-<script>  
-var domain="www.zuidaima.com";  
-var author="zuidaima";  
-var map=eval("["+Array(23).join("0x801,")+"0xfff]");  
-var tatris=[[0x6600],[0x2222,0xf00],[0xc600,0x2640],[0x6c00,0x4620],[0x4460,0x2e0,0x6220,0x740],[0x2260,0xe20,0x6440,0x4700],[0x2620,0x720,0x2320,0x2700]];  
-var keycom={"38":"rotate(1)","40":"down()","37":"move(2,1)","39":"move(0.5,-1)"};  
-var dia, pos, bak, run;  
-function start(){  
-    dia=tatris[~~(Math.random()*7)];  
-    bak=pos={fk:[],y:0,x:4,s:~~(Math.random()*4)};  
-    rotate(0);  
-}  
-function over(){  
-    document.onkeydown=null;  
-    clearInterval(run);  
-    alert("GAME OVER");  
-}  
-function update(t){  
-    bak={fk:pos.fk.slice(0),y:pos.y,x:pos.x,s:pos.s};  
-    if(t) return;  
-    for(var i=0,a2=""; i<22; i++)  
-        a2+=map[i].toString(2).slice(1,-1)+"<br/>";  
-    for(var i=0,n; i<4; i++)  
-        if(/([^0]+)/.test(bak.fk[i].toString(2).replace(/1/g,"\u25a1")))  
-            a2=a2.substr(0,n=(bak.y+i+1)*15-RegExp.$_.length-4)+RegExp.$1+a2.slice(n+RegExp.$1.length);  
-    document.getElementById("box").innerHTML=a2.replace(/1/g,"\u25a0").replace(/0/g,"\u3000");  
-}  
-function is(){  
-    for(var i=0; i<4; i++)  
-        if((pos.fk[i]&map[pos.y+i])!=0) return pos=bak;  
-}  
-function rotate(r){  
-    var f=dia[pos.s=(pos.s+r)%dia.length];  
-    for(var i=0; i<4; i++)  
-        pos.fk[i]=(f>>(12-i*4)&15)<<pos.x;  
-    update(is());  
-}  
-function down(){  
-    ++pos.y;  
-    if(is()){  
-        for(var i=0; i<4 && pos.y+i<22; i++)  
-            if((map[pos.y+i]|=pos.fk[i])==0xfff)  
-                map.splice(pos.y+i,1), map.unshift(0x801);  
-        if(map[1]!=0x801) return over();  
-        start();  
-    }  
-    update();  
-}  
-function move(t,k){  
-    pos.x+=k;  
-    for(var i=0; i<4; i++)  
-        pos.fk[i]*=t;  
-    update(is());  
-}  
-document.onkeydown=function(e){  
-    eval(keycom[(e?e:event).keyCode]);  
-};  
-start();  
-run=setInterval("down()",400);  
-</script></body></html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS文字球状放大效果DEMO演示</title>
+
+<style type="text/css">
+body {cursor:crosshair;margin:0; padding:0; position:absolute; overflow:hidden; background:#000; left:0; top:0; width:100%; height:100%;}
+span {position:absolute;font-family: verdana; font-weight: bold;}
+</style>
+
+<script type="text/javascript"><!--
+
+T    = "What is  real?How do you define real?   Ifyou're talkingabout what youcan feel  whatyou can  smellwhat  you  cantaste and  seethen   real issimply   electrical  signalsinterpreted byyour brain!        ";
+I    = 0;
+o    = new Array();
+xm   = -1000;
+ym   = -1000;
+///////////////
+rad  = 80;
+dim  = 200;
+///////////////
+W    = 0;
+H    = 0;
+NX   = 14;
+NY   = 14;
+var nx;
+var ny;
+
+document.onmousemove = function(e){
+	if (window.event) e = window.event;
+	xm = (e.x || e.clientX) - (nx  * .5) + dim * .5;
+	ym = (e.y || e.clientY) - (ny * .5) + dim * .5;
+}
+
+function resize() {
+	nx = document.body.offsetWidth;
+	ny = document.body.offsetHeight;
+}
+onresize = resize;
+
+function CObj(N,i,j,c){
+	this.obj = document.createElement("span");
+	this.obj.innerHTML = c;
+	DOOT.appendChild(this.obj);
+	this.N    = N;
+	this.To   = 16;
+	this.x0   = i*2*W;
+	this.y0   = j*2*H;
+	this.anim = true;
+
+	this.mainloop = function(){
+		with (this) {
+ 			dx   = xm - x0;
+			dy   = ym - y0;
+			dist = Math.sqrt(dx * dx + dy * dy);
+			if (dist < rad) {
+				anim = true;
+				M    = Math.cos(.5 * Math.PI * Math.abs(dist / rad));
+				c    = Math.round(84 + M * 171);
+				with(obj.style){
+					left     = x0 - dx * M;
+					top      = y0 - dy * M;
+					zIndex   = Math.round(100 + M);
+					fontSize = 8 + M * W * 2;
+					color    = "RGB("+c+","+c+","+c+")";
+				}
+			} else {
+				if(anim){
+					with(obj.style){
+						left     = x0;
+						top      = y0;
+						zIndex   = 0;
+						fontSize = 8;
+						color    = "RGB(88,88,88)";
+					}
+				anim = false;
+				}
+			}
+		}
+	}
+}
+function run(){
+	for(i in o)o[i].mainloop();
+	setTimeout(run,16);
+}
+
+onload = function (){
+	DOOT = document.getElementById("doot");
+	with(DOOT.style){
+		left = -dim/2;
+		top  = -dim/2;
+		width = dim;
+		height = dim;
+	}
+	resize();
+	W = (dim  / NX) / 2;
+	H = (dim / NY) / 2;
+	K = 0;
+	for(var j=0;j<NY;j++){
+		for(var i=0;i<NX;i++){
+			c=T.charAt((I++)%T.length).toUpperCase();
+			if(c==" ")c="·";
+			o[K] = new CObj(K++,i,j,c);
+		}
+	}
+	run();
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<span style="position:absolute;left:50%;top:50%">
+	<span id="doot"></span>
+</span>
+<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
