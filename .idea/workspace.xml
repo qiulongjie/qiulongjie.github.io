@@ -29,11 +29,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62005275">
-              <caret line="117" column="125" selection-start-line="117" selection-start-column="125" selection-end-line="117" selection-end-column="125" />
+            <state vertical-scroll-proportion="0.30343008">
+              <caret line="254" column="101" selection-start-line="254" selection-start-column="101" selection-end-line="254" selection-end-column="101" />
               <folding>
-                <marker date="1448543537000" expanded="true" signature="2677:2830" placeholder="..." />
-                <marker date="1448543537000" expanded="true" signature="2770:2798" placeholder="..." />
+                <marker date="1448543861000" expanded="true" signature="2677:2830" placeholder="..." />
+                <marker date="1448543861000" expanded="true" signature="2770:2798" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -492,7 +492,7 @@
       <option name="number" value="Default" />
       <updated>1448468389991</updated>
       <workItem from="1448468391367" duration="852000" />
-      <workItem from="1448501146593" duration="5888000" />
+      <workItem from="1448501146593" duration="6193000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1448468615587</created>
@@ -518,11 +518,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448542359705</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modify ico">
+      <created>1448543578385</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1448543578385</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6740000" />
+    <option name="totallyTimeSpent" value="7045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -612,11 +618,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62005275">
-          <caret line="117" column="125" selection-start-line="117" selection-start-column="125" selection-end-line="117" selection-end-column="125" />
+        <state vertical-scroll-proportion="0.30343008">
+          <caret line="254" column="101" selection-start-line="254" selection-start-column="101" selection-end-line="254" selection-end-column="101" />
           <folding>
-            <marker date="1448543537000" expanded="true" signature="2677:2830" placeholder="..." />
-            <marker date="1448543537000" expanded="true" signature="2770:2798" placeholder="..." />
+            <marker date="1448543861000" expanded="true" signature="2677:2830" placeholder="..." />
+            <marker date="1448543861000" expanded="true" signature="2770:2798" placeholder="..." />
           </folding>
         </state>
       </provider>
