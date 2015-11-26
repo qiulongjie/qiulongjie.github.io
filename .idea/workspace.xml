@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfb77d64-6822-4429-9791-ca7f4dc418ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="423eb886-3f01-47bc-b583-982f24f55028" name="New changelist" comment="" />
@@ -27,24 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4166665">
-              <caret line="57" column="55" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.62005275">
+              <caret line="117" column="130" selection-start-line="117" selection-start-column="130" selection-end-line="117" selection-end-column="130" />
               <folding>
-                <marker date="1448537191000" expanded="true" signature="2677:2830" placeholder="..." />
-                <marker date="1448537191000" expanded="true" signature="2770:2798" placeholder="..." />
+                <marker date="1448542291000" expanded="true" signature="2677:2830" placeholder="..." />
+                <marker date="1448542291000" expanded="true" signature="2770:2798" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tongji.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tongji.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/baidu/tongji.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18610422">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -78,8 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/js/jquery.cycle2.min.js" />
         <option value="$PROJECT_DIR$/js/baidu/tongji.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -493,7 +492,7 @@
       <option name="number" value="Default" />
       <updated>1448468389991</updated>
       <workItem from="1448468391367" duration="852000" />
-      <workItem from="1448501146593" duration="4522000" />
+      <workItem from="1448501146593" duration="5236000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1448468615587</created>
@@ -507,11 +506,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448506696035</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify ico and remove googlemap">
+      <created>1448537494250</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1448537494250</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5374000" />
+    <option name="totallyTimeSpent" value="6088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -549,7 +554,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="add baidu_tongji" />
-    <option name="LAST_COMMIT_MESSAGE" value="add baidu_tongji" />
+    <MESSAGE value="modify ico and remove googlemap" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify ico and remove googlemap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -589,22 +595,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/baidu/tongji.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4166665">
-          <caret line="57" column="55" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="55" />
-          <folding>
-            <marker date="1448537191000" expanded="true" signature="2677:2830" placeholder="..." />
-            <marker date="1448537191000" expanded="true" signature="2770:2798" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/baidu/tongji.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18610422">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="0.62005275">
+          <caret line="117" column="130" selection-start-line="117" selection-start-column="130" selection-end-line="117" selection-end-column="130" />
+          <folding>
+            <marker date="1448542291000" expanded="true" signature="2677:2830" placeholder="..." />
+            <marker date="1448542291000" expanded="true" signature="2770:2798" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
