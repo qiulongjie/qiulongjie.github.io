@@ -30,10 +30,10 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.62005275">
-              <caret line="117" column="130" selection-start-line="117" selection-start-column="130" selection-end-line="117" selection-end-column="130" />
+              <caret line="117" column="125" selection-start-line="117" selection-start-column="125" selection-end-line="117" selection-end-column="125" />
               <folding>
-                <marker date="1448542291000" expanded="true" signature="2677:2830" placeholder="..." />
-                <marker date="1448542291000" expanded="true" signature="2770:2798" placeholder="..." />
+                <marker date="1448543537000" expanded="true" signature="2677:2830" placeholder="..." />
+                <marker date="1448543537000" expanded="true" signature="2770:2798" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -492,7 +492,7 @@
       <option name="number" value="Default" />
       <updated>1448468389991</updated>
       <workItem from="1448468391367" duration="852000" />
-      <workItem from="1448501146593" duration="5236000" />
+      <workItem from="1448501146593" duration="5888000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1448468615587</created>
@@ -512,11 +512,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448537494250</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modify ico">
+      <created>1448542359705</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1448542359705</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6088000" />
+    <option name="totallyTimeSpent" value="6740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
@@ -555,7 +561,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add baidu_tongji" />
     <MESSAGE value="modify ico and remove googlemap" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify ico and remove googlemap" />
+    <MESSAGE value="modify ico" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify ico" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -606,10 +613,10 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62005275">
-          <caret line="117" column="130" selection-start-line="117" selection-start-column="130" selection-end-line="117" selection-end-column="130" />
+          <caret line="117" column="125" selection-start-line="117" selection-start-column="125" selection-end-line="117" selection-end-column="125" />
           <folding>
-            <marker date="1448542291000" expanded="true" signature="2677:2830" placeholder="..." />
-            <marker date="1448542291000" expanded="true" signature="2770:2798" placeholder="..." />
+            <marker date="1448543537000" expanded="true" signature="2677:2830" placeholder="..." />
+            <marker date="1448543537000" expanded="true" signature="2770:2798" placeholder="..." />
           </folding>
         </state>
       </provider>
