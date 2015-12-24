@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table  style="border-collapse:separate;background-color: black;border-spacing: 1px;">
+    <caption>jjjjasdhjhgkhakjhfakjf</caption>
+    <colgroup>
+        <col style="background-color:white;"/>
+        <col style="background-color:white;width:100%"/>
+    </colgroup>
+    <tr>
+        <td ondblclick="editableChange(this)" onblur="textComplete(this)">xxx</td>
+        <td>aaa</td>
+    </tr>
+    <tr>
+        <td>xxx2</td>
+        <td>aaa2</td>
+    </tr>
+</table>
+
+<input type="text" spellcheck="true">
+</body>
+<script>
+    function editableChange(tdObj){
+        if(tdObj.contenteditable){
+            tdObj.contenteditable = false;
+        }else{
+            tdObj.contenteditable = true;
+        }
+    }
+    function textComplete(tdObj){
+        alert(tdObj.innerText);
+    }
+</script>
+</html>
